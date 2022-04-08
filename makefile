@@ -5,4 +5,4 @@ clean:
 	rm -f wzip submission.zip
 
 zip:
-	zip submission.zip *.c *.h
+	zip submission.zip *.c *.h MakeFile
