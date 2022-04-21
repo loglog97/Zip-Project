@@ -1,5 +1,5 @@
 all:
-	gcc -o wzip wzip.c -Wall -Werror
+	gcc -o wzip wzip.c -Wall -Werror -pthread
 
 clean:
 	rm -f wzip submission.zip
