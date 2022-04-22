@@ -67,7 +67,9 @@ int main(int argc, char *argv[]){
             fstat(fileno(fp), &finfo);
             if(finfo.st_size > 4096){
                 pthread_t threads[3];
-                
+                for(int i = 0; i < 3; i++){
+                    pthread_create(&threads[i], NULL, handleLargeFile, NULL);
+                }
             }else{
                 fread(&letterToChk, 1, 1, fp); //grabs the first char
                 count += compress(fp, letterToChk);
