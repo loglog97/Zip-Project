@@ -13,7 +13,7 @@
  * if a file is > 4096 bytes, we use three threads to compress the file
  * @author Logan Cole
  * Stage 1: Compeleted 4/7/2022
- * Stage 2: Completed 06/3/2022
+ * Stage 2: Completed 05/3/2022
  */
 char *fileData;
 
